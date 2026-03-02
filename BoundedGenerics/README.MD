@@ -1,35 +1,73 @@
 # Generic Storage System
-> A type-safe Java implementation for managing objects via Generics and Interfaces.
+
+A simple generic storage system implemented in Java that demonstrates the use of Generics, Interfaces, and Object-Oriented Programming principles.
+
+This project simulates a basic storage mechanism where objects can be stored and retrieved using unique IDs. It was developed as part of backend programming practice with a focus on type safety and reusable code.
 
 ---
 
-## 📌 Overview
-This project provides a reusable storage mechanism designed to handle any object type that implements a unique identifier. It focuses on **Type Safety**, **Encapsulation**, and **Object-Oriented Design**.
+## Features
 
-## ✨ Features
-* **Generic API:** Uses `<T>` for universal object handling.
-* **Bounded Types:** Ensures all stored objects provide an ID via the `HasId` interface.
-* **ID-Based Retrieval:** Quick lookup for specific objects within the collection.
-* **Type Safety:** Prevents runtime errors by enforcing constraints at compile-time.
-
----
-
-## 🛠️ Technology Stack
-* **Language:** Java 17+
-* **Concepts:** Generics, Interfaces, Polymorphism.
-* **Collections:** `ArrayList`.
+- Generic storage using `<T>`
+- Interface-based design
+- Objects identified by unique IDs
+- Add objects to storage
+- Retrieve objects by ID
+- Type-safe implementation
+- Object-oriented structure
 
 ---
 
-## 🏗️ How It Works
+## Technologies
 
-The system relies on a **bounded type parameter**. Only classes implementing the `HasId` contract can be stored.
+- Java
+- Generics
+- Interfaces
+- Collections (ArrayList)
+- Object-Oriented Programming (OOP)
+
+---
+
+## Project Structure
 
 
+GenericStorageSystem/
+│
+├── HasId.java
+├── Storage.java
+├── Item.java
+└── Main.java
 
-### 1. The Interface
-Every stored object must provide an integer ID.
-```java
-public interface HasId {
-    int getId();
-}
+
+---
+
+## How It Works
+
+The system uses a generic storage class that can store any type of object, as long as the object implements the `HasId` interface.
+
+This ensures that every object stored in the system has a unique identifier.
+
+Learning Goals
+This project was built to practice:
+
+Java Generics
+
+Interfaces
+
+Type constraints
+
+Object-oriented design
+
+Data storage logic
+
+Future Improvements
+
+Remove items
+
+Update items
+
+File storage support
+
+Database integration
+
+REST API implementation
