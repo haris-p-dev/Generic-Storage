@@ -28,19 +28,6 @@ This project simulates a basic storage mechanism where objects can be stored and
 
 ---
 
-## Project Structure
-
-
-GenericStorageSystem/
-│
-├── HasId.java
-├── Storage.java
-├── Item.java
-└── Main.java
-
-
----
-
 ## How It Works
 
 The system uses a generic storage class that can store any type of object, as long as the object implements the `HasId` interface.
